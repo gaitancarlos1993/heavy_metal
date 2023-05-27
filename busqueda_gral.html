@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header class="mb-4">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Ferrementum</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Herramientas manuales</a>
+                            <a class="dropdown-item" href="#">Herramientas eléctricas</a>
+                            <a class="dropdown-item" href="#">Ferretería y materiales</a>
+                            <a class="dropdown-item" href="#">Construcción</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?"
+                            aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center">
+                    <div class="position-relative mr-3">
+                        <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                        <span class="badge badge-pill badge-danger position-absolute"
+                            style="top: -8px; right: -10px;">0</span>
+                    </div>
+                    <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
+                    <button class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+    <div class="col-md-3 float-md-left w-75">
+        <form>
+          <h2>Búsqueda de productos</h2>
+          <div class="form-group">
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto">
+          </div>
+          <div class="form-group">
+            <label for="marcas">Marcas:</label>
+            <select class="form-control" id="marcas">
+              <option>Todas las marcas</option>
+              <option>Marca 1</option>
+              <option>Marca 2</option>
+              <option>Marca 3</option>
+              <option>Marca 4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="marca">Filtrar por marca:</label>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Marca 1</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Marca 2</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Marca 3</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Marca 4</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Marca 5</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="precios">Precios:</label>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="number" class="form-control" id="precio-min" placeholder="Valor mínimo">
+              </div>
+              <div class="col-md-6">
+                <input type="number" class="form-control" id="precio-max" placeholder="Valor máximo">
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+      
+      <div class="container col-md-9">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" class="card-img-top w-25 h-25" alt="Producto 3">
+            <div class="card-body">
+                <h5 class="card-title">Producto 3</h5>
+                <p class="card-text">Marca: Marca 3</p>
+                <p class="card-text">Precio: $39.99</p>
+                <button type="button" class="btn btn-primary mostrar-modal" data-toggle="modal"
+                    data-target="#miModal"><i class="fas fa-plus-circle"></i> Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="miModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nombre Producto - Referencia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+                            <li data-target="#miCarrusel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <p class="mt-3">Precio: $19.99</p>
+                    <p>Descripción del producto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        venenatis tincidunt nibh a facilisis. Phasellus vel eros mi. Quisque vitae ipsum eget
+                        mauris ultricies varius.</p>
+                    <button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+      
+    <footer class="bg-light text-dark py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Ferrementum</h3>
+                    <p class="text-muted mb-0">Construye tu futuro con nosotros</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Servicio al cliente</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Cambios y devoluciones</a></li>
+                        <li><a href="#">Política de protección de datos personales</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Estatuto del consumidor</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Únete</h3>
+                    <p>Regístrate para obtener ofertas exclusivas</p>
+                    <a href="#" class="btn btn-outline-light">Regístrate</a>
+                    <p class="text-muted mt-3">NIT 123456789-0</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
