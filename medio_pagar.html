@@ -70,19 +70,23 @@
             <form>
                 <div class="form-group">
                     <label for="nombreTarjeta">Nombre en la tarjeta</label>
-                    <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre en la tarjeta">
+                    <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre en la tarjeta"required>
                 </div>
                 <div class="form-group">
                     <label for="numeroTarjeta">Número de tarjeta</label>
-                    <input type="text" class="form-control" id="numeroTarjeta" placeholder="Número de tarjeta">
+                    <input type="number" class="form-control" id="numeroTarjeta" placeholder="Número de tarjeta" required>
                 </div>
                 <div class="form-group">
                     <label for="fechaVencimiento">Fecha de vencimiento</label>
-                    <input type="text" class="form-control" id="fechaVencimiento" placeholder="MM/AA">
+                    <input type="date" class="form-control" id="fechaVencimiento" placeholder="MM/AA" required>
                 </div>
                 <div class="form-group">
                     <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                    <input type="number" class="form-control" id="cvv" placeholder="CVV" required>
+                </div>
+                <div class="form-group">
+                    <label for="cedulaCiudadania">Cedula de Ciudadania</label>
+                    <input type="number" class="form-control" id="Cedulaciudadania" placeholder="Cedula de ciudadania" required>
                 </div>
                 <button type="button" class="btn btn-primary">Continuar</button>
             </form>
