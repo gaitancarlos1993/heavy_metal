@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,44 +55,130 @@
                 </div>
             </div>
         </nav>
-
     </header>
-    
-    <div class="container">
+
+<!--Medios de pago-->
+
+      <div class="container">
         <ul class="list-unstyled">
-            <li>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaCredito" value="tarjeta">
-                    <label class="form-check-label" for="tarjetaCredito">Tarjeta de Crédito</label>
-                </div>
-            </li>
+          <li>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaCredito" value="tarjeta">
+              <label class="form-check-label" for="tarjetaCredito">Tarjeta de Crédito</label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="metodoPago" id="tarjetaDebito" value="tarjeta">
+              <label class="form-check-label" for="tarjetaDebito">Tarjeta de Débito</label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="metodoPago" id="PSE" value="tarjeta">
+              <label class="form-check-label" for="PSE">Transferencia desde un banco con PSE</label>
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="metodoPago" id="pagoEfectivo" value="tarjeta">
+              <label class="form-check-label" for="pagoEfectivo">Pago en efectivo</label>
+            </div>
+          </li>
         </ul>
+    <!--Tarjeta de credito-->
         <div id="formularioTarjeta" style="display: none;">
+          <form>
+            <div class="form-group">
+              <label for="nombreTarjeta">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre en la tarjeta" required>
+            </div>
+            <div class="form-group">
+              <label for="numeroTarjeta">Número de tarjeta</label>
+              <input type="number" class="form-control" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+            </div>
+            <div class="form-group">
+              <label for="fechaVencimiento">Fecha de vencimiento</label>
+              <input type="date" class="form-control" id="fechaVencimiento" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="number" class="form-control" id="cvv" placeholder="CVV" required>
+            </div>
+            <div class="form-group">
+              <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
+              <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
+            </div>
+            <button type="button" class="btn btn-primary">Continuar</button>
+          </form>
+        </div>
+    <!--Tarjeta de debito-->
+        <div id="formularioTarjetaDebito" style="display: none;">
             <form>
                 <div class="form-group">
-                    <label for="nombreTarjeta">Nombre en la tarjeta</label>
-                    <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre en la tarjeta" required>
+                  <label for="nombreTarjeta">Nombre en la tarjeta</label>
+                  <input type="text" class="form-control" id="nombreTarjeta" placeholder="Nombre en la tarjeta" required>
                 </div>
                 <div class="form-group">
-                    <label for="numeroTarjeta">Número de tarjeta</label>
-                    <input type="number" class="form-control" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+                  <label for="numeroTarjeta">Número de tarjeta</label>
+                  <input type="number" class="form-control" id="numeroTarjeta" placeholder="Número de tarjeta" required>
                 </div>
                 <div class="form-group">
-                    <label for="fechaVencimiento">Fecha de vencimiento</label>
-                    <input type="date" class="form-control" id="fechaVencimiento" placeholder="MM/AA" required>
+                  <label for="fechaVencimiento">Fecha de vencimiento</label>
+                  <input type="date" class="form-control" id="fechaVencimiento" placeholder="MM/AA" required>
                 </div>
                 <div class="form-group">
-                    <label for="cvv">CVV</label>
-                    <input type="number" class="form-control" id="cvv" placeholder="CVV" required>
+                  <label for="cvv">CVV</label>
+                  <input type="number" class="form-control" id="cvv" placeholder="CVV" required>
                 </div>
                 <div class="form-group">
-                    <label for="cedulaCiudadania">Cedula de Ciudadania</label>
-                    <input type="number" class="form-control" id="Cedulaciudadania" placeholder="Cedula de ciudadania" required>
+                  <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
+                  <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
                 </div>
                 <button type="button" class="btn btn-primary">Continuar</button>
-            </form>
-        </div>
-    </div>
+              </form> 
+        </div> 
+    <!--Transferencia PSE-->
+      <div id="formularioTransferenciaPSE" style="display: none;">
+        <form>
+            <div class="form-group">
+                <label for="nombrecomprador">Nombre Registrado</label>
+                <input type="text" class="form-control" id="nombrecomprador" placeholder="Nombre Registrado" required>
+            </div>
+            <div class="form-group">
+                <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
+                <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Telefono vinculado" required>
+            </div>
+        </form>
+      </div>
+    <!--Pago en efectivi-->
+      <div id="formularioPagoEfectivo" style="display: none;">
+        <form>
+            <div class="form-group">
+                <label for="nombrecomprador">Nombre del comprador</label>
+                <input type="text" class="form-control" id="nombrecomprador" placeholder="Nombre del comprador" required>
+              </div>
+            <div class="form-group">
+                <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
+                <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
+              </div> 
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Telefono" required>
+            </div> 
+            <div class="form-group">
+                <label for="correo">Correo Electronico</label>
+                <input type="text" class="form-control" id="correo" placeholder="Correo electronico" required>
+            </div>
+        </form>
+      </div>
+</div>
+
+
     <footer class="bg-light text-dark py-3 mt-4">
         <div class="container">
             <div class="row">
@@ -124,26 +211,64 @@
         </div>
     </footer>
     <div>
+
         <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+
             <script>
-                $(document).ready(function() {
-                    $("#tarjetaCredito").click(function() {
-                        if ($(this).is(":checked")) {
-                            $("#formularioTarjeta").show();
-                        } else {
-                            $("#formularioTarjeta").hide();
-                        }
-                    });
-                });
+                document.getElementById("tarjetaCredito").addEventListener("change", function() {
+                    var formularioTarjeta = document.getElementById("formularioTarjeta");
+                    var formularioTarjetaDebito = document.getElementById("formularioTarjetaDebito");
+                    var formularioTransferenciaPSE= document.getElementById("formularioTransferenciaPSE");
+                    var formularioPagoEfectivo= document.getElementById("formularioPagoEfectivo");
+                    formularioTarjeta.style.display = this.checked ? "block" : "none";
+                    formularioTarjetaDebito.style.display = "none";
+                    formularioTransferenciaPSE.style.display = "none";
+                    formularioPagoEfectivo.style.display = "none";
+                  });
+                  
+                  document.getElementById("tarjetaDebito").addEventListener("change", function() {
+                    var formularioTarjeta = document.getElementById("formularioTarjeta");
+                    var formularioTarjetaDebito = document.getElementById("formularioTarjetaDebito");
+                    var formularioTransferenciaPSE= document.getElementById("formularioTransferenciaPSE");
+                    var formularioPagoEfectivo= document.getElementById("formularioPagoEfectivo");
+                    formularioTarjetaDebito.style.display = this.checked ? "block" : "none";
+                    formularioTarjeta.style.display = "none";
+                    formularioTransferenciaPSE.style.display = "none";
+                    formularioPagoEfectivo.style.display = "none";
+                  });
+                  document.getElementById("PSE").addEventListener("change", function() {
+                    var formularioTarjeta = document.getElementById("formularioTarjeta");
+                    var formularioTarjetaDebito = document.getElementById("formularioTarjetaDebito");
+                    var formularioTransferenciaPSE= document.getElementById("formularioTransferenciaPSE");
+                    var formularioPagoEfectivo= document.getElementById("formularioPagoEfectivo");
+                    formularioTransferenciaPSE.style.display = this.checked ? "block" : "none";
+                    formularioTarjeta.style.display = "none";
+                    formularioTarjetaDebito.style.display = "none";
+                    formularioPagoEfectivo.style.display = "none";
+                  });
+                  document.getElementById("pagoEfectivo").addEventListener("change", function() {
+                    var formularioTarjeta = document.getElementById("formularioTarjeta");
+                    var formularioTarjetaDebito = document.getElementById("formularioTarjetaDebito");
+                    var formularioTransferenciaPSE= document.getElementById("formularioTransferenciaPSE");
+                    var formularioPagoEfectivo= document.getElementById("formularioPagoEfectivo");
+                    formularioPagoEfectivo.style.display = this.checked ? "block" : "none";
+                    formularioTarjeta.style.display = "none";
+                    formularioTarjetaDebito.style.display = "none";
+                    formularioTransferenciaPSE.style.display = "none";
+                  });
+                  
             </script>
     </div>
 </body>
