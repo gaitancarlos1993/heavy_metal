@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambios y devoluciones</title>
+</head>
+
+<!--Encabezado de paguina-->
+
+<header class="mb-4">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ferrementum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Herramientas manuales</a>
+            <a class="dropdown-item" href="#">Herramientas eléctricas</a>
+            <a class="dropdown-item" href="#">Ferretería y materiales</a>
+            <a class="dropdown-item" href="#">Construcción</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="toggleFormulario()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex align-items-center">
+        <div class="position-relative mr-3">
+          <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+          <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
+        </div>
+        <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
+        <button class="btn btn-primary">Iniciar sesión</button>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+   <!--Formulario de busqueda-->
+   <div class="col-md-3 float-md-left w-75" id="formulario" style="display: none;">
+    <form>
+      <h2>Búsqueda de productos</h2>
+      <div class="form-group">
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto">
+      </div>
+      <div class="form-group">
+        <label for="marcas">Marcas:</label>
+        <select class="form-control" id="marcas">
+          <option>Todas las marcas</option>
+          <option>Marca 1</option>
+          <option>Marca 2</option>
+          <option>Marca 3</option>
+          <option>Marca 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="marca">Filtrar por marca:</label>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 1</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 2</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 3</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 4</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 5</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="precios">Precios:</label>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="precio-min" placeholder="Valor mínimo">
+          </div>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="precio-max" placeholder="Valor máximo">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+  </div>
+
+  <h3>Política de Cambios y Devoluciones </h3>
+
+  <h5>1. Satisfacción garantizada</h5>
+  <h6>En Heavy Metal, nos esforzamos por brindarte productos de alta calidad y servicios excepcionales. Si por alguna razón no estás satisfecho con tu compra, ofrecemos opciones de cambios y devoluciones para garantizar tu satisfacción.</h6><br>
+
+  <h5>2. Condiciones generales</h5>
+  <h6>2.1. Plazo para cambios y devoluciones: Tienes un plazo de 30 días a partir de la fecha de entrega para solicitar un cambio o devolución.
+
+    <br>2.2. Estado del producto: El producto debe estar en su estado original, sin usar y en su empaque original. Debe incluir todas las piezas, accesorios y manuales que vinieron con él.
+    
+    <br>2.3. Exclusiones: Algunos productos, debido a su naturaleza o uso específico, pueden no ser elegibles para cambios o devoluciones. Estos incluyen productos personalizados, productos perecederos o productos sujetos a restricciones legales o de seguridad.
+    </h6><br>
+
+  <h5>3. Procedimiento de cambios y devoluciones</h5>
+  <h6>3.1. Contacto previo: Antes de realizar cualquier cambio o devolución, te recomendamos que te pongas en contacto con nuestro servicio de atención al cliente. Ellos te brindarán las instrucciones necesarias y resolverán cualquier duda que puedas tener.
+
+    <br>3.2. Documentación requerida: Para procesar tu solicitud de cambio o devolución, necesitaremos el comprobante de compra original, que puede ser el recibo de compra, la factura o el correo electrónico de confirmación del pedido.
+    
+    <br>3.3. Opciones disponibles:
+    
+    <br>3.3.1. Cambio por otro producto: Si deseas cambiar el producto por otro de igual o mayor valor, te ofreceremos opciones de productos disponibles y te informaremos sobre cualquier diferencia de precio.
+    
+    <br>3.3.2. Devolución y reembolso: Si prefieres realizar una devolución, te reembolsaremos el monto pagado utilizando el mismo método de pago utilizado en la compra original.
+    </h6><br>
+
+  <h5>4. Costos de envío</h5>
+  <h6>4.1. Cambios: Los costos de envío para el cambio de un producto correrán por cuenta del cliente, a menos que el cambio se deba a un error nuestro o a un producto defectuoso.
+
+    <br>4.2. Devoluciones: En caso de devolución, los costos de envío correrán por cuenta del cliente, a menos que la devolución se deba a un error nuestro o a un producto defectuoso.
+    </h6><br>
+
+  <h5>5. Proceso de revisión</h5>
+  <h6>Una vez recibido el producto devuelto, realizaremos una revisión para asegurarnos de que cumple con las condiciones establecidas en esta política. Si todo está en orden, procederemos a realizar el cambio o reembolso correspondiente en un plazo de [30] días hábiles.</h6><br>
+
+  <h5>6. Contacto</h5>
+  <h6>Para cualquier consulta o solicitud relacionada con cambios y devoluciones, puedes comunicarte con nuestro servicio de atención al cliente a través de los datos de contacto proporcionados en nuestra página web.
+
+    <br><br>Recuerda que esta política de cambios y devoluciones está sujeta a cambios y actualizaciones. Te recomendamos revisarla periódicamente para estar al tanto de cualquier modificación.
+    </h6><br>
+</div>
+
+
+<!---Pie de paguina-->
+
+<footer class="bg-light text-dark py-3 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Ferrementum</h3>
+          <p class="text-muted mb-0">Construye tu futuro con nosotros</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+  
+        <!--Politicas de Heavy Metal-->
+  
+        <div class="col-md-4">
+          <h3>Servicio al cliente</h3>
+          <ul class="list-unstyled">
+            <li><a href="cambiosydevoluciones.html">Cambios y devoluciones</a></li>
+            <li><a href="Politicasdatos.html">Política de protección de datos personales</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Estatuto del consumidor</a></li>
+          </ul>
+        </div>
+  
+        <!--Invitación-->
+        <div class="col-md-4">
+          <h3>Únete</h3>
+          <p>Regístrate para obtener ofertas exclusivas</p>
+          <a href="#" class="btn btn-outline-light">Regístrate</a>
+          <p class="text-muted mt-3">NIT 123456789-0</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+<script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--Formulario de busqueda-->
+  <script>
+    function toggleFormulario() {
+        var formulario = document.getElementById("formulario");
+        if (formulario.style.display === "none") {
+          formulario.style.display = "block";
+        } else {
+          formulario.style.display = "none";
+        }
+      }
+    </script>
