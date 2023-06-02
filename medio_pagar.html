@@ -109,9 +109,12 @@
               <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
               <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
             </div>
-            <button type="button" class="btn btn-primary">Continuar</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#miDiv">Continuar</button>
+
           </form>
         </div>
+     
+
     <!--Tarjeta de debito-->
         <div id="formularioTarjetaDebito" style="display: none;">
             <form>
@@ -142,40 +145,42 @@
       <div id="formularioTransferenciaPSE" style="display: none;">
         <form>
             <div class="form-group">
-                <label for="nombrecomprador">Nombre Registrado</label>
-                <input type="text" class="form-control" id="nombrecomprador" placeholder="Nombre Registrado" required>
-            </div>
-            <div class="form-group">
-                <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
-                <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
-              </div>
-              <div class="form-group">
-                <label for="telefono">Telefono</label>
-                <input type="number" class="form-control" id="telefono" placeholder="Telefono vinculado" required>
+              <button class="btn btn-primary">
+                <i class="fab fa-paypal mr-2"></i>
+                Checkout
+            </button>
+            
             </div>
         </form>
       </div>
-    <!--Pago en efectivi-->
+    <!--Pago en efectivo-->
       <div id="formularioPagoEfectivo" style="display: none;">
         <form>
-            <div class="form-group">
-                <label for="nombrecomprador">Nombre del comprador</label>
-                <input type="text" class="form-control" id="nombrecomprador" placeholder="Nombre del comprador" required>
-              </div>
-            <div class="form-group">
-                <label for="cedulaCiudadania">Cédula de Ciudadanía</label>
-                <input type="number" class="form-control" id="cedulaCiudadania" placeholder="Cédula de Ciudadanía" required>
-              </div> 
-            <div class="form-group">
-                <label for="telefono">Telefono</label>
-                <input type="number" class="form-control" id="telefono" placeholder="Telefono" required>
-            </div> 
-            <div class="form-group">
-                <label for="correo">Correo Electronico</label>
-                <input type="text" class="form-control" id="correo" placeholder="Correo electronico" required>
+          <div class="form-group">
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#miDiv">Continuar</button>
+
             </div>
         </form>
       </div>
+</div>
+<!-- Modal de exito -->
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="miModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Su domicilio será entregado el día [fecha random]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <i class="fas fa-check-circle text-success fa-2x"></i>
+                <p>Su domicilio será entregado el día [fecha random]</p>
+                <a href="index.html" class="btn btn-primary">Continuar</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -212,6 +217,7 @@
     </footer>
     <div>
 
+         
         <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
