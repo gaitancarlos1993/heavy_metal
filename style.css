@@ -1,0 +1,5 @@
+footer {
+    position: fixed; /* Establece la posición fija para el footer */
+    bottom: 0; /* Alinea el footer en la parte inferior de la página */
+    width: 100%; /* Establece el ancho completo para el footer */
+}
