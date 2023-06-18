@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="sitioprueba2.css">
+  <title>Cambios y devoluciones</title>
+</head>
+
+<!--Encabezado de paguina-->
+
+<header class="mb-4">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ferrementum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Herramientas manuales</a>
+            <a class="dropdown-item" href="#">Herramientas eléctricas</a>
+            <a class="dropdown-item" href="#">Ferretería y materiales</a>
+            <a class="dropdown-item" href="#">Construcción</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="toggleFormulario()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex align-items-center">
+        <div class="position-relative mr-3">
+          <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+          <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
+        </div>
+        <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
+        <button class="btn btn-primary">Iniciar sesión</button>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+   <!--Formulario de busqueda-->
+   <div class="col-md-3 float-md-left w-75" id="formulario" style="display: none;">
+    <form>
+      <h2>Búsqueda de productos</h2>
+      <div class="form-group">
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto">
+      </div>
+      <div class="form-group">
+        <label for="marcas">Marcas:</label>
+        <select class="form-control" id="marcas">
+          <option>Todas las marcas</option>
+          <option>Marca 1</option>
+          <option>Marca 2</option>
+          <option>Marca 3</option>
+          <option>Marca 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="marca">Filtrar por marca:</label>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 1</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 2</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 3</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 4</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Marca 5</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="precios">Precios:</label>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="precio-min" placeholder="Valor mínimo">
+          </div>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="precio-max" placeholder="Valor máximo">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+  </div>
+
+  <div class="Politicas">
+<br>
+<h3>Términos y Condiciones de Uso de Heavy Metal</h3><br>
+
+Estos términos y condiciones ("Términos") establecen los derechos y obligaciones legales entre usted ("Usuario" o "Cliente") y Heavy Metal, una plataforma en línea que ofrece productos de ferretería y servicios relacionados ("Nosotros", "Nos" o "Plataforma"). Al utilizar nuestra página web y realizar compras en Heavy Metal, usted acepta cumplir con estos Términos y todas las leyes y regulaciones aplicables. Lea atentamente estos Términos antes de utilizar nuestro sitio web o adquirir nuestros productos. Si no está de acuerdo con alguno de los términos y condiciones, no utilice nuestra plataforma.
+
+<br><br><h5>1. Aceptación de los Términos y Condiciones</h5>
+1.1. Al acceder o utilizar el sitio web de Heavy Metal, usted reconoce haber leído, entendido y aceptado estos Términos en su totalidad.
+<br>1.2. Si no acepta estos Términos, no podrá utilizar nuestros servicios ni adquirir nuestros productos.
+
+<br><br><h5>2. Registro y Cuenta de Usuario</h5>
+2.1. Para utilizar ciertas características y servicios ofrecidos por Heavy Metal, puede ser necesario crear una cuenta de usuario. Usted es responsable de mantener la confidencialidad de su cuenta y de todas las actividades que ocurran bajo su cuenta.
+<br>2.2. Usted se compromete a proporcionar información precisa, actualizada y completa durante el proceso de registro y a actualizarla si hay algún cambio.
+<br>2.3. Heavy Metal se reserva el derecho de suspender o cancelar su cuenta si se sospecha o se encuentra evidencia de que ha proporcionado información falsa, engañosa o incompleta.
+
+<br><br><h5>3. Productos y Precios</h5>
+3.1. Heavy Metal ofrece una variedad de productos de ferretería a la venta. Nos esforzamos por proporcionar descripciones precisas y actualizadas de los productos, pero no garantizamos que dichas descripciones sean exactas, completas, confiables o libres de errores.
+<br>3.2. Nos reservamos el derecho de modificar los precios de los productos en cualquier momento sin previo aviso. Sin embargo, una vez que usted haya realizado una compra, el precio acordado se mantendrá sin cambios.
+<br>3.3. Nos esforzamos por mostrar imágenes precisas de los productos en nuestro sitio web, pero tenga en cuenta que las imágenes pueden diferir ligeramente de los productos reales debido a la configuración de su pantalla o a posibles variaciones en el embalaje o diseño del fabricante.
+
+<br><br><h5>4. Compras y Pagos</h5>
+4.1. Al realizar una compra en Heavy Metal, usted acepta proporcionar información precisa y actualizada sobre usted y su método de pago.
+<br>4.2. Usted será responsable de pagar el precio total de los productos adquiridos, incluidos los impuestos y los gastos de envío aplicables.
+<br>4.3. Heavy Metal utiliza proveedores de servicios de pago de terceros para procesar los pagos. Nosotros no almacenamos ni tenemos acceso a su información de pago personal.
+
+<br><br><h5>5. Envío y Entrega</h5>
+5.1. Nos comprometemos a enviar los productos adquiridos tan pronto como sea posible y dentro de los plazos de entrega estimados. Sin embargo, no garantizamos la entrega en un plazo específico, ya que esto puede depender de factores externos y fuera de nuestro control.
+<br>5.2. Los gastos de envío y cualquier otro cargo adicional relacionado se calcularán y mostrarán durante el proceso de compra. Usted será responsable de cubrir estos costos adicionales, a menos que se indique lo contrario.
+<br>5.3. Heavy Metal no se hace responsable de los retrasos en la entrega o de los problemas causados por la empresa de transporte o cualquier evento de fuerza mayor.
+
+<br><br><h5>6. Devoluciones y Reembolsos</h5>
+6.1. Si no está satisfecho con un producto que ha adquirido en Heavy Metal, puede solicitar una devolución o reembolso de acuerdo con nuestra política de devoluciones.
+<br>6.2. Las devoluciones están sujetas a ciertas condiciones, como el estado del producto y el período de tiempo desde la fecha de compra. Lea nuestra política de devoluciones para obtener más información sobre los procedimientos y requisitos.
+
+<br><br><h5>7. Propiedad Intelectual</h5>
+7.1. Heavy Metal es propietario de todos los derechos de propiedad intelectual relacionados con la plataforma y su contenido, incluidos, entre otros, los derechos de autor, marcas comerciales y patentes.
+<br>7.2. Usted acepta no utilizar, reproducir o distribuir ningún contenido de Heavy Metal sin nuestro consentimiento expreso por escrito.
+
+<br><br><h5>8. Limitación de Responsabilidad</h5>
+8.1. Heavy Metal no se hace responsable de ningún daño directo, indirecto, incidental, consecuencial o especial que surja del uso o la imposibilidad de utilizar nuestra plataforma o los productos adquiridos a través de ella.
+<br>8.2. Usted asume todos los riesgos asociados con el uso de nuestra plataforma y los productos que adquiera, y acepta que Heavy Metal no será responsable de ningún problema o daño causado por virus, malware u otros elementos destructivos.
+
+<br><br><h5>9. Modificaciones de los Términos y Condiciones</h5>
+9.1. Heavy Metal se reserva el derecho de modificar estos Términos en cualquier momento. Cualquier modificación entrará en vigor a partir de su publicación en nuestro sitio web.
+<br>9.2. Se recomienda revisar periódicamente estos Términos para estar al tanto de cualquier cambio. El uso continuado de nuestra plataforma después de la modificación de los Términos constituirá su aceptación de dichos cambios.
+
+<br><br><h5>10. Ley Aplicable y Jurisdicción</h5>
+10.1. Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes del país donde Heavy Metal tiene su sede.
+<br>10.2. Cualquier disputa que surja de o en relación con estos Términos estará sujeta a la jurisdicción exclusiva de los tribunales competentes en la ubicación donde Heavy Metal tiene su sede.
+
+<br><br>Gracias por leer y aceptar nuestros Términos y Condiciones. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nosotros.
+
+</div>
+
+  <!---Pie de paguina-->
+
+<footer class="bg-light text-dark py-3 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Ferrementum</h3>
+          <p class="text-muted mb-0">Construye tu futuro con nosotros</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+  
+        <!--Politicas de Heavy Metal-->
+  
+        <div class="col-md-4">
+          <h3>Servicio al cliente</h3>
+          <ul class="list-unstyled">
+            <li><a href="cambiosydevoluciones.html">Cambios y devoluciones</a></li>
+            <li><a href="Politicasdatos.html">Política de protección de datos personales</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Estatuto del consumidor</a></li>
+          </ul>
+        </div>
+  
+        <!--Invitación-->
+        <div class="col-md-4">
+          <h3>Únete</h3>
+          <p>Regístrate para obtener ofertas exclusivas</p>
+          <a href="#" class="btn btn-outline-light">Regístrate</a>
+          <p class="text-muted mt-3">NIT 123456789-0</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+<script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!--Formulario de busqueda-->
+  <script>
+    function toggleFormulario() {
+        var formulario = document.getElementById("formulario");
+        if (formulario.style.display === "none") {
+          formulario.style.display = "block";
+        } else {
+          formulario.style.display = "none";
+        }
+      }
+    </script>
