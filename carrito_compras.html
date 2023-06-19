@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="mb-4">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">Heavy Metal</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Categorías
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Herramientas manuales</a>
-                  <a class="dropdown-item" href="#">Herramientas eléctricas</a>
-                  <a class="dropdown-item" href="#">Ferretería y materiales</a>
-                  <a class="dropdown-item" href="#">Construcción</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <div class="input-group">
-                <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
-                </div>
-              </div>
-            </form>
-            <div class="d-flex align-items-center">
-              <div class="position-relative mr-3">
-                <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-                <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
-              </div>
-              <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
-              <button class="btn btn-primary">Iniciar sesión</button>
+  <header class="mb-4">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Heavy Metal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorías
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Herramientas manuales</a>
+              <a class="dropdown-item" href="#">Herramientas eléctricas</a>
+              <a class="dropdown-item" href="#">Ferretería y materiales</a>
+              <a class="dropdown-item" href="#">Construcción</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="input-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
             </div>
           </div>
-        </nav>
-        
-</header>
-<div class="container mt-4">
+        </form>
+        <div class="d-flex align-items-center">
+          <div class="position-relative mr-3">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
+          </div>
+          <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
+          <button class="btn btn-primary">Iniciar sesión</button>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <div class="container mt-4">
     <h2>Productos Adquiridos</h2>
     <div class="row">
       <div class="col-md-6">
@@ -82,22 +84,22 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-md-6">
         <p>Envío: $5000</p>
         <p>Total con envío: $25000</p>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-md-6">
         <button class="btn btn-primary" onclick="redireccionar()">Continuar compras</button>
       </div>
     </div>
   </div>
-  
-<footer class="bg-light text-dark py-3 mt-4 footer">
+
+  <footer class="bg-light text-dark py-3 mt-4 footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -130,15 +132,19 @@
   </footer>
   <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <script>
-      function redireccionar() {
-    window.location.href = "busqueda_gral.html";
-  }
+    function redireccionar() {
+      window.location.href = "form_domicilio.html";
+    }
   </script>
 </body>
+
 </html>
