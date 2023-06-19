@@ -50,110 +50,112 @@
           </div>
         </nav>
         
-    </header>
-    <div class="container mt-4">
-        <div class="row">
-          <div class="col-md-8">
-            <h2>Formulario de Domicilio</h2>
-            <form>
-              <div class="form-group">
-                <label for="nombres">Nombres</label>
-                <input type="text" class="form-control" id="nombres" placeholder="Ingrese sus nombres" required>
-              </div>
-              <div class="form-group">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos" required>
-              </div>
-              <div class="form-group">
-                <label for="departamento">Departamento</label>
-                <select class="form-control" id="departamento" required>
-                  <option value="Bogotá">Bogotá</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="localidad">Localidad</label>
-                <select class="form-control" id="localidad" required>
-                  <option value="Puente Aranda">Puente Aranda</option>
-                  <option value="Teusaquillo">Teusaquillo</option>
-                  <option value="Chapinero">Chapinero</option>
-                  <option value="Suba">Suba</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="barrio">Barrio</label>
-                <input type="text" class="form-control" id="barrio" placeholder="Ingrese el barrio" required>
-              </div>
-              <div class="form-group">
-                <label for="tipo-calle">Tipo de Calle</label>
-                <select class="form-control" id="tipo-calle">
-                  <option value="Calle">Calle</option>
-                  <option value="Carrera">Carrera</option>
-                  <option value="Avenida">Avenida</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="numero_calle">Número de <output>Calle</output></label>
-                <input type="text" class="form-control" id="numero_calle" placeholder="Ingrese el número de la calle">
-              </div>
-              <div class="form-group">
-                <label for="numero">Número</label>
-                <input type="text" class="form-control" id="numero" placeholder="Ingrese el número de via secundaria">
-              </div>
-              <div class="form-group">
-                <label for="placa">Placa</label>
-                <input type="text" class="form-control" id="placa" placeholder="Ingrese el número de la placa">
-              </div>
-              <div class="form-group">
-                <label for="telefono">Teléfono de Contacto</label>
-                <input type="number" class="form-control" id="telefono" placeholder="Ingrese el teléfono"  maxlength="10">
-              </div>
-              <div class="form-group">
-                <label for="referencias">Referencias Adicionales</label>
-                <textarea class="form-control" id="referencias" rows="3" placeholder="Ingrese referencias adicionales"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" onclick="redireccionar()">Continuar</button>
-            </form>
+</header>
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Formulario de Domicilio</h2>
+        <form>
+          <div class="form-group">
+            <label for="nombres">Nombres</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Ingrese sus nombres" required>
           </div>
-          <div class="col-md-4 bg-light" style="background-color: #f5f5f5;">
-            <h4>Resumen de la Compra</h4>
-            <p>Productos (<span id="numero-productos">4</span>):</p>
-            <p>Total: $<span id="total">150000</span></p>
+          <div class="form-group">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="departamento">Departamento</label>
+            <select class="form-control" id="departamento" required>
+              <option value="Bogotá">Bogotá</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="localidad">Localidad</label>
+            <select class="form-control" id="localidad" required>
+              <option value="Puente Aranda">Puente Aranda</option>
+              <option value="Teusaquillo">Teusaquillo</option>
+              <option value="Chapinero">Chapinero</option>
+              <option value="Suba">Suba</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="barrio">Barrio</label>
+            <input type="text" class="form-control" id="barrio" placeholder="Ingrese el barrio" required>
+          </div>
+          <div class="form-group">
+            <label for="tipo-calle">Tipo de Calle</label>
+            <select class="form-control" id="tipo-calle">
+              <option value="Calle">Calle</option>
+              <option value="Carrera">Carrera</option>
+              <option value="Avenida">Avenida</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numero_calle">Número de <output>Calle</output></label>
+            <input type="text" class="form-control" id="numero_calle" placeholder="Ingrese el número de la calle">
+          </div>
+          <div class="form-group">
+            <label for="numero">Número</label>
+            <input type="text" class="form-control" id="numero" placeholder="Ingrese el número de via secundaria">
+          </div>
+          <div class="form-group">
+            <label for="placa">Placa</label>
+            <input type="text" class="form-control" id="placa" placeholder="Ingrese el número de la placa">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono de Contacto</label>
+            <input type="number" class="form-control" id="telefono" placeholder="Ingrese el teléfono"  maxlength="10">
+          </div>
+          <div class="form-group">
+            <label for="referencias">Referencias Adicionales</label>
+            <textarea class="form-control" id="referencias" rows="3" placeholder="Ingrese referencias adicionales"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="redireccionar()">Continuar</button>
+        </form>
+      </div>
+      <div class="col-md-4 bg-light" style="background-color: #f5f5f5;">
+        <h4>Resumen de la Compra</h4>
+        <p>Productos (<span id="numero-productos">4</span>):</p>
+        <p>Total: $<span id="total">150000</span></p>
+      </div>
     </div>
-    <footer class="bg-light text-dark py-3 mt-4 ">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <h3>Heavy Metal</h3>
-                <p class="text-muted mb-0">Construye tu futuro con nosotros</p>
-                <div class="social-icons mt-3">
-                  <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-                  <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
-                  <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-                  <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h3>Servicio al cliente</h3>
-                <ul class="list-unstyled">
-                  <li><a href="cambiosydevoluciones.html">Cambios y devoluciones</a></li>
-                  <li><a href="Politicasdatos.html">Política de protección de datos personales</a></li>
-                  <li><a href="#">Términos y condiciones</a></li>
-                  <li><a href="#">Estatuto del consumidor</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h3>Únete</h3>
-                <p>Regístrate para obtener ofertas exclusivas</p>
-                <a href="#" class="btn btn-outline-light">Regístrate</a>
-                <p class="text-muted mt-3">NIT 123456789-0</p>
-              </div>
-            </div>
+  </div>
+  
+<footer class="bg-light text-dark py-3 mt-4 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Heavy Metal</h3>
+          <p class="text-muted mb-0">Construye tu futuro con nosotros</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
         </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        <div class="col-md-4">
+          <h3>Servicio al cliente</h3>
+          <ul class="list-unstyled">
+            <li><a href="cambiosydevoluciones.html">Cambios y devoluciones</a></li>
+            <li><a href="Politicasdatos.html">Política de protección de datos personales</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Estatuto del consumidor</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Únete</h3>
+          <p>Regístrate para obtener ofertas exclusivas</p>
+          <a href="#" class="btn btn-outline-light">Regístrate</a>
+          <p class="text-muted mt-3">NIT 123456789-0</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div>
+  <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
