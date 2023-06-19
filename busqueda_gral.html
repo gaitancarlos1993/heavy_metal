@@ -51,8 +51,8 @@
                         <span class="badge badge-pill badge-danger position-absolute"
                             style="top: -8px; right: -10px;">0</span>
                     </div>
-                    <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
-                    <button class="btn btn-primary">Iniciar sesión</button>
+                    <button class="btn btn-outline-primary mr-2"  onclick="crearCuenta()">Crear cuenta</button>
+                    <button class="btn btn-primary"  onclick="IniciarSesion()">Iniciar sesión</button>
                 </div>
             </div>
         </nav>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Buscar</button>
+            <button type="submit" class="btn btn-primary" onclick="validarCampos(event)">Buscar</button>
         </form>
       </div>
       
@@ -231,6 +231,27 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 
+<script>
+      function IniciarSesion(){
+        window.location.href = "login.html";
+    }
+    function crearCuenta(){
+        window.location.href = "registro.html";
+    }
+    function validarCampos(event) {
+        event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
+        // Obtiene los valores de los campos del formulario
+        var nombre = document.getElementById("nombre").value;
+        var marca = document.getElementById("marcas").value;
+        var precioMin = document.getElementById("precio-min").value;
+        var precioMax = document.getElementById("precio-max").value;
+
+        // Verifica si no se ha ingresado ningún campo
+        if (nombre === "" && marca === "Todas las marcas" && precioMin === "" && precioMax === "") {
+            alert("Debe ingresar al menos un campo");
+        } 
+    }
+</script>
 
 </html>
