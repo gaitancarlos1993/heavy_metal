@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!-- mb-4 es margin button -->
 <header class="mb-4">
   <!-- "navbar" es una clase que se utiliza para crear una barra de navegación en la parte superior de una página web. -->
@@ -16,184 +17,204 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
   cierto tamaño, en este caso "md" significa "medium" o "mediano". -->
   <!-- "navbar-light" es una clase que establece un esquema de colores claro para la barra de navegación.
 "bg-light" es una clase que establece un fondo claro para la barra de navegación. -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <!-- "navbar-brand" es una clase de Bootstrap que se utiliza para agregar un logotipo o marca en la barra de navegación.
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <!-- "navbar-brand" es una clase de Bootstrap que se utiliza para agregar un logotipo o marca en la barra de navegación.
        Cuando se aplica esta clase a un elemento HTML dentro de la estructura de la barra de navegación, este elemento se alinea 
        a la izquierda de la barra de navegación y se utiliza para mostrar la identidad visual de la marca o sitio web en cuestión.  -->
-        <a class="navbar-brand" href="index_cliente.html">Heavy Metal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Categorías
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Herramientas manuales</a>
-                <a class="dropdown-item" href="#">Herramientas eléctricas</a>
-                <a class="dropdown-item" href="#">Ferretería y materiales</a>
-                <a class="dropdown-item" href="#">Construcción</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <div class="input-group">
-              <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
-              </div>
-            </div>
-          </form>
-          <div class="d-flex align-items-center">
-            <div class="position-relative mr-3">
-              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-              <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
-            </div>
-            <div class="media ml-3">
-                <img src="https://via.placeholder.com/50" class="align-self-center rounded-circle" alt="...">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Bienvenido Carlos Alberto Gaitán Moreno
-                  </a>
-              </div>
+    <a class="navbar-brand" href="index_cliente.html">Heavy Metal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categorías
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Herramientas manuales</a>
+            <a class="dropdown-item" href="#">Herramientas eléctricas</a>
+            <a class="dropdown-item" href="#">Ferretería y materiales</a>
+            <a class="dropdown-item" href="#">Construcción</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
           </div>
         </div>
-      </nav>
-    </div>
-  </nav>
-</header>
-<body>
-    <div class="row">
-        <div class="col-md-3">
-            <form>
-                <h2>Búsqueda de productos</h2>
-                <div class="form-group">
-                  <label for="nombre">Nombre del producto:</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto">
-                </div>
-                <div class="form-group">
-                  <label for="marcas">Marcas:</label>
-                  <select class="form-control" id="marcas">
-                    <option>Todas las marcas</option>
-                    <option>Marca 1</option>
-                    <option>Marca 2</option>
-                    <option>Marca 3</option>
-                    <option>Marca 4</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="marca">Filtrar por marca:</label>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Marca 1</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Marca 2</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Marca 3</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Marca 4</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Marca 5</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="precios">Precios:</label>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <input type="number" class="form-control" id="precio-min" placeholder="Valor mínimo">
-                    </div>
-                    <div class="col-md-6">
-                      <input type="number" class="form-control" id="precio-max" placeholder="Valor máximo">
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
-              </form>
+      </form>
+      <div class="d-flex align-items-center">
+        <div class="position-relative mr-3">
+          <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+          <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
         </div>
-        <div class="col-md-9">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Nombre del producto</th>
-                <th>Marca</th>
-                <th>Precio</th>
-                <th>Stock</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sierra circular</td>
-                <td>Bosch</td>
-                <td>$150</td>
-                <td>10</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Taladro eléctrico</td>
-                <td>DeWalt</td>
-                <td>$100</td>
-                <td>20</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Martillo</td>
-                <td>Stanley</td>
-                <td>$20</td>
-                <td>50</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Cinta métrica</td>
-                <td>Komelon</td>
-                <td>$10</td>
-                <td>100</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Llave inglesa</td>
-                <td>Ridgid</td>
-                <td>$30</td>
-                <td>30</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="media ml-3">
+          <img src="https://via.placeholder.com/50" class="align-self-center rounded-circle" alt="...">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Bienvenido Carlos Alberto Gaitán Moreno
+          </a>
         </div>
       </div>
+    </div>
+  </nav>
+  </div>
+  </nav>
+</header>
+
+<body>
+  <div class="row">
+    <div class="col-md-3">
+      <form>
+        <h2>Búsqueda de productos</h2>
+        <div class="form-group">
+          <label for="nombre">Nombre del producto:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del producto">
+        </div>
+        <div class="form-group">
+          <label for="marcas">Marcas:</label>
+          <select class="form-control" id="marcas">
+            <option>Todas las marcas</option>
+            <option>Marca 1</option>
+            <option>Marca 2</option>
+            <option>Marca 3</option>
+            <option>Marca 4</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="precios">Precios:</label>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="precio-min" placeholder="Valor mínimo">
+            </div>
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="precio-max" placeholder="Valor máximo">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+    </div>
+    <div class="col-md-9">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Nombre del producto</th>
+                  <th>Marca</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Sierra circular</td>
+                  <td>Bosch</td>
+                  <td>$150</td>
+                  <td>10</td>
+                  <td>
+                      <!-- Botón de Visibilizar -->
+                      <button type="button" class="btn btn-link text-muted" data-bs-toggle="modal"
+                          data-bs-target="#visibilizarModal">
+                          <i class="fas fa-eye"></i>
+                      </button>
+  
+                      <!-- Botón de Editar -->
+                      <button type="button" class="btn btn-link text-muted" data-bs-toggle="modal"
+                          data-bs-target="#editarModal">
+                          <i class="fas fa-edit"></i>
+                      </button>
+  
+                      <!-- Botón de Eliminar -->
+                      <button type="button" class="btn btn-link text-muted" data-bs-toggle="modal"
+                          data-bs-target="#eliminarModal">
+                          <i class="fas fa-trash"></i>
+                      </button>
+  
+                      <!-- Botón de Insertar -->
+                      <button type="button" class="btn btn-link text-muted" data-bs-toggle="modal"
+                          data-bs-target="#insertarModal">
+                          <i class="fas fa-plus-circle"></i>
+                      </button>
+  
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+  <!-- Modal de Visibilizar -->
+  <div class="modal fade" id="visibilizarModal" tabindex="-1" role="dialog" aria-labelledby="miModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="miModalLabel">Modal de Visibilizar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Hola mundo desde el modal de Visibilizar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Modal de Editar -->
+  <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="editarModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="editarModalLabel">Modal de Editar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Hola mundo desde el modal de Editar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Modal de Eliminar -->
+  <div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="eliminarModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="eliminarModalLabel">Modal de Eliminar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Hola mundo desde el modal de Eliminar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Modal de Insertar -->
+  <div class="modal fade" id="insertarModal" tabindex="-1" aria-labelledby="insertarModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="insertarModalLabel">Modal de Insertar</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Hola mundo desde el modal de Insertar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    
 </body>
-<footer class="bg-light text-dark py-3 mt-4 footer">
+<!-- <footer class="bg-light text-dark py-3 mt-4 footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -222,15 +243,13 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-crossorigin="anonymous"></script>
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-crossorigin="anonymous"></script>
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a3b1f44c43.js" crossorigin="anonymous"></script>
+
 </html>

@@ -52,6 +52,7 @@
 
     </header>
     <div class="container">
+      <div class="table-responsive">
       <table class="table">
         <thead class="thead-light">
           <tr>
@@ -63,9 +64,39 @@
             <th>Número de Teléfono</th>
             <th>Medio de Pago</th>
             <th>Valor Compra</th>
+            <th>Estado</th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><input type="text" placeholder="Dirección"></td>
+            <td>
+              <select>
+                <option value="departamento1">Departamento 1</option>
+                <option value="departamento2">Departamento 2</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="ciudad1">Ciudad 1</option>
+                <option value="ciudad2">Ciudad 2</option>
+                <option value="ciudad3">Ciudad 3</option>
+                <option value="ciudad4">Ciudad 4</option>
+              </select>
+            </td>
+            <td><input type="text" placeholder="Barrio"></td>
+            <td><input type="text" placeholder="Nombre del cliente"></td>
+            <td><input type="number" placeholder="Número de teléfono"></td>
+            <td>
+              <select>
+                <option value="pago1">Medio de pago 1</option>
+                <option value="pago2">Medio de pago 2</option>
+                <option value="pago3">Medio de pago 3</option>
+              </select>
+            </td>
+            <td><input type="number" placeholder="Valor de compra"></td>
+            <td><input type="text" placeholder="Estado"></td>
+          </tr>
           <tr>
             <td>Calle 123</td>
             <td>Antioquia</td>
@@ -75,6 +106,7 @@
             <td>+57 312 123 4567</td>
             <td>Efectivo</td>
             <td>$150,000</td>
+            <td>Pendiente</td>
           </tr>
           <tr>
             <td>Carrera 456</td>
@@ -85,6 +117,8 @@
             <td>+57 320 987 6543</td>
             <td>Tarjeta de Crédito</td>
             <td>$250,000</td>
+            <td>Entregado</td>
+
           </tr>
           <tr>
             <td>Av. Principal</td>
@@ -95,6 +129,7 @@
             <td>+57 300 111 2222</td>
             <td>Transferencia Bancaria</td>
             <td>$180,000</td>
+            <td>Entregado</td>
           </tr>
           <tr>
             <td>Calle Central</td>
@@ -105,9 +140,12 @@
             <td>+57 310 444 5555</td>
             <td>Pago en Línea</td>
             <td>$300,000</td>
+            <td>Pendiente</td>
+
           </tr>
         </tbody>
       </table>
+    </div>
     </div>
     
     
