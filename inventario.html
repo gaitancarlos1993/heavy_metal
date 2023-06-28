@@ -137,57 +137,10 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <a href="#" id="botonModal"><i class="fas fa-eye"></i></a>
                   <a href="#" id="botonEditar"><i class="fas fa-edit"></i></a>
                   <a href="#" id="botonEliminar"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#" id="botonAgregar"><i class="fas fa-plus-circle"></i></a>
+                  <a href="#" id="botoninsertar"><i class="fas fa-plus-circle"></i></a>
                 </td>
               </tr>
-              <tr>
-                <td>Taladro eléctrico</td>
-                <td>DeWalt</td>
-                <td>$100</td>
-                <td>20</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Martillo</td>
-                <td>Stanley</td>
-                <td>$20</td>
-                <td>50</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Cinta métrica</td>
-                <td>Komelon</td>
-                <td>$10</td>
-                <td>100</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>Llave inglesa</td>
-                <td>Ridgid</td>
-                <td>$30</td>
-                <td>30</td>
-                <td>
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash-alt"></i></a>
-                  <a href="#"><i class="fas fa-plus-circle"></i></a>
-                </td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -240,10 +193,100 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 </div>
 
 <!--formulario para agregar-->
-<!--Formulario de informaciòn del producto-->
+<div id="editarmodal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Sierra circular - Referencia: 9525</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="codigo">Código del producto:</label>
+                      <input type="text" class="form-control" id="codigo" value="9525">
+                  </div>
+                  <div class="form-group">
+                      <label for="marca">Marca del producto:</label>
+                      <input type="text" class="form-control" id="marca" value="Bosch">
+                  </div>
+                  <div class="form-group">
+                      <label for="referencia">Referencia:</label>
+                      <input type="text" class="form-control" id="referencia" value="deft">
+                  </div>
+                  <div class="form-group">
+                      <label for="descripcion">Descripción:</label>
+                      <textarea class="form-control" id="descripcion" rows="3">Sierra circular</textarea>
+                  </div>
+                  <div class="form-group">
+                      <label for="precio">Precio:</label>
+                      <input type="number" class="form-control" id="precio" value="150">
+                  </div>
+                  <div class="form-group">
+                      <label for="stock">Stock:</label>
+                      <input type="number" class="form-control" id="stock" value="10">
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!--Formulario de insertar del producto-->
+<div id="insertarmodal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="codigo">Nombre del producto::</label>
+                      <input type="text" class="form-control" id="codigo" placeholder="Ingrese el nombre del producto">
+                  </div>
+                  <div class="form-group">
+                      <label for="marca">Marca del producto:</label>
+                      <input type="text" class="form-control" id="marca" placeholder="Ingrese la marca del producto">
+                  </div>
+                  <div class="form-group">
+                      <label for="referencia">Referencia:</label>
+                      <input type="text" class="form-control" id="referencia" placeholder="Ingrese la referencia">
+                  </div>
+                  <div class="form-group">
+                      <label for="descripcion">Descripción:</label>
+                      <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese la descripción del producto"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <label for="precio">Precio:</label>
+                      <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio">
+                  </div>
+                  <div class="form-group">
+                      <label for="stock">Stock:</label>
+                      <input type="number" class="form-control" id="stock" placeholder="Ingrese el stock">
+                  </div>
+                  <div class="form-group">
+                      <label for="imagenes">Imágenes:</label>
+                      <input type="file" class="form-control" id="imagenes" multiple>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Insertar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
 
-
-<!--Pie de paguina-->
+<!--Pie de paguina
 
 <footer class="bg-light text-dark py-3 mt-4">
     <div class="container">
@@ -275,7 +318,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
       </div>
     </div>
   </footer>
-
+-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>
@@ -295,6 +338,27 @@ crossorigin="anonymous"></script>
     });
   });
 </script>
+
+<!--Funciòn para visualizar el producto -->
+
+<script>
+  $(document).ready(function() {
+    $('#botonEditar').click(function() {
+      $('#editarmodal').modal('show');
+    });
+  });
+</script>
+
+<!--Funciòn para visualizar el producto -->
+
+<script>
+  $(document).ready(function() {
+    $('#botoninsertar').click(function() {
+      $('#insertarmodal').modal('show');
+    });
+  });
+</script>
+
 
 <!--Funciòn de mensaje para aceptar o cancelar el inventario-->
 <script>
@@ -319,7 +383,5 @@ crossorigin="anonymous"></script>
     // Lógica para mostrar un mensaje de cancelación
   }
 </script>
-
-
 
 </html>
