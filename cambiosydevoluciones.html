@@ -45,11 +45,11 @@
       </form>
       <div class="d-flex align-items-center">
         <div class="position-relative mr-3">
-          <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+          <a href="carrito_compras.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
           <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
         </div>
-        <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
-        <button class="btn btn-primary">Iniciar sesión</button>
+        <button class="btn btn-outline-primary mr-2" onclick="crearCuenta()">Crear cuenta</button>
+        <button class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button>
       </div>
     </div>
   </nav>
@@ -201,6 +201,13 @@
 
   <!--Formulario de busqueda-->
   <script>
+    function iniciarSesion(){
+      window.location.href = "login.html";
+
+    }
+    function crearCuenta(){
+      window.location.href = "registro.html";
+    }
     function toggleFormulario() {
         var formulario = document.getElementById("formulario");
         if (formulario.style.display === "none") {

@@ -38,7 +38,7 @@
           <div class="input-group">
             <input class="form-control mr-sm-2" type="search" placeholder="¿Qué artículo buscas?" aria-label="Buscar">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+              <button class="btn btn-outline-secondary" type="submit" onclick="busquedaGeneral()"><i class="fas fa-search"></i></button>
             </div>
           </div>
         </form>
@@ -47,8 +47,8 @@
             <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
             <span class="badge badge-pill badge-danger position-absolute" style="top: -8px; right: -10px;">0</span>
           </div>
-          <button class="btn btn-outline-primary mr-2">Crear cuenta</button>
-          <button class="btn btn-primary">Iniciar sesión</button>
+          <button class="btn btn-outline-primary mr-2" onclick="crearCuenta()">Crear cuenta</button>
+          <button class="btn btn-primary" onclick="iniciarSesion()">Iniciar sesión</button>
         </div>
       </div>
     </nav>
@@ -143,6 +143,18 @@
   <script>
     function redireccionar() {
       window.location.href = "form_domicilio.html";
+    }
+    function busquedaGeneral(){
+      window.location.href = "busqueda_gral.html";
+
+    }
+    function crearCuenta(){
+      window.location.href = "registro.html";
+
+    }
+    function iniciarSesion(){
+      window.location.href = "login.html";
+
     }
   </script>
 </body>
