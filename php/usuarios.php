@@ -27,7 +27,7 @@
                         <th>Número de Documento</th>
                         <th>Rol</th>
                         <th>Estado</th>
-                        <th>Clave desencriptada</th>
+                       
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -44,8 +44,8 @@
                     td.nombre_tipo_doc,
                     num_documento,
                     rol.nombre,
-                    e.estadoscol,
-                    contraseña_hash	
+                    e.estadoscol
+                    	
                       FROM usuarios AS u
                       JOIN tipos_documentos AS td
                       ON id_tipo_doc = id_tipo_documento
@@ -98,7 +98,7 @@
 </html>
 <script>
     // JavaScript (utilizando jQuery)
-    $(document).ready(function() {
+    $(document).ready( function() {
         $('.edit-button').click(function() {
             var userId = $(this).data('id');
 
